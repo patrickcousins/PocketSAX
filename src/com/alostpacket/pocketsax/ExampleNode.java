@@ -4,7 +4,9 @@ package com.alostpacket.pocketsax;
 
 
 /**
- * Example RSS node base on Wikipedia entry for RSS
+ * Example RSS node base on Wikipedia entry for RSS.  All fields are public for simplicity.   
+ * But with annotations these could be made private and/or use setTitle()  etc.
+ * 
  * <pre>{@code
 <item>
   <title>Example entry</title>

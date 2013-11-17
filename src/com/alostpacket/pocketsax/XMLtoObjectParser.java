@@ -14,10 +14,7 @@ import android.util.Log;
  * different types of data objects and XML. The XML format is somewhat specific
  * in this implementation though.
  * 
- * TODO: define an abstract versionName that can be extended for specific
- * implementations
  * 
- * @see /assets/appsOwnPermissions.xml
  * @see PropertyType
  * @author Patrick Cousins
  * 
@@ -167,6 +164,8 @@ public class XMLtoObjectParser extends DefaultHandler
 				// paramXMLNodeName +":"+ stringValue.toString ( ) );
 				try
 				{
+					// to simplify things we just use string here, in an older implementation we used 
+					// PropertyType and an xml attribute to determine the field type
 					if ( currentType.equalsIgnoreCase( PropertyType.STRING ) )
 					{
 						f.set( tempObj, stringValue.toString() );
