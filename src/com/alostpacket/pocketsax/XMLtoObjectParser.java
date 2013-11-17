@@ -23,7 +23,7 @@ import android.util.Log;
  * 
  */
 
-public class XMLtoObjetParser extends DefaultHandler
+public class XMLtoObjectParser extends DefaultHandler
 {
 
 	// Debugging
@@ -46,10 +46,10 @@ public class XMLtoObjetParser extends DefaultHandler
 
 	private boolean					parsingItem				= false;
 
-	public XMLtoObjetParser( Handler handler )
+	public XMLtoObjectParser( Handler handler )
 	{
 		this.handler = handler;
-		if ( D ) Log.d( TAG, "XMLtoObjetParser created" );
+		if ( D ) Log.d( TAG, "XMLtoObjectParser created" );
 	}
 
 	/**

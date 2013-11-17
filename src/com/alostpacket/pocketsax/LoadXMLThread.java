@@ -34,7 +34,7 @@ public class LoadXMLThread extends Thread
 	{
 		if (D) Log.v ( TAG, "loading... " );
 
-		XMLtoObjetParser 		xmlToVOHandler 		= new XMLtoObjetParser( handler );   
+		XMLtoObjectParser 		xmlToVOHandler 		= new XMLtoObjectParser( handler );   
 	    SAXParserFactory 	spf 				= SAXParserFactory.newInstance();
 	    
 	    try
